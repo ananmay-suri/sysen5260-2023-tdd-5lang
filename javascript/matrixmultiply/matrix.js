@@ -32,11 +32,19 @@ function writeMatrix(matrix, filename){
 
 
 function multiply(matrixA, matrixB){
-    let nrows = matrixA.length;
+    let nrows = matrixA.length; 
     let ncols = matrixB[0].length;
     let blen = matrixB.length;
     let result = new Array(nrows);
-    // TODO: Implement Matrix Multiply
+        for (let i = 0; i < nrows; i++) {
+			result[i] = new Array(ncols);
+			for (let j = 0; j < ncols; j++) {
+				result[i][j] = 0;
+				for (let k = 0; k < blen; k++) {
+					result[i][j] += matrixA[i][k] * matrixB[k][j];
+				}
+			}
+		}
     return result;
 }
 
