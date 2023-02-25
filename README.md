@@ -1,9 +1,12 @@
 # sysen5260-2023-tdd-5lang retrospective
 
-### HOw did your teammates collaborate to complete the assignment?
+### How did your teammates collaborate to complete the assignment?
 1. How did you split up the work? Which team members worked on what?
-2. How were you able to use git/GitHub to facilitate collaboration?
-3. What worked well? What could be improved? What changes would you make for your next project?
+ - Our team utilized Jira to create user stories and commited our changes to those user stories during individual working sessions. We utilized extreme programming techniques such as pair programming such that two members programmed in Python and Java while the other two programmers coded in Javascript and C. We all collaborated in person on the Go programming assignment.
+3. How were you able to use git/GitHub to facilitate collaboration?
+ - We were able to use GitHub for version control via git commands. Furthermore, we utilized Jira and our commit messages to update the workflow among team members.
+5. What worked well? What could be improved? What changes would you make for your next project?
+ - Version control and agile evironment worked well with this project. The Kanban board helped teammates stay on track and remain updated on assignments still in progress. We could have improved by reading and researching documentation for specific languages such as Go that would have helped in hindsight. For our next project, we will utilize a more structured Kanban board.
 
 ### Which language from the list C, Java, JavaScript, Go, Python do you think you would recommend for the following tasks? Write a sentence or two explaining why for each:
 1. Writing a low-latency hardware driver.
