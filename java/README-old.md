@@ -74,20 +74,3 @@ I edited this `POM.xml` a bit to support a few additional needs for this project
 References:
 * https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
-# Quick Reference
-
-## Java
-Test:
-```bash
-mvn test
-```
-
-Build the Jar file:
-```bash
-mvn clean compile assembly:single
-```
-
-Run the program:
-```bash
-java -cp target/sysen5260-1.0-SNAPSHOT-jar-with-dependencies.jar edu.cornell.sysen5260.MatrixMultiplyCommand /opt/data/mat_a.csv /opt/data/mat_b.csv
-```
