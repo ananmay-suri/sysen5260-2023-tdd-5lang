@@ -9,6 +9,3 @@ RUN apt-get update && apt-get install -y \
 
 RUN cabal update && \
     cabal install --lib HUnit
-
-COPY matrix.hs /opt/app
-COPY Main.hs /opt/app

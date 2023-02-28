@@ -1,5 +1,6 @@
 import Test.HUnit
 import Matrix
+import System.IO (hPutStrLn, stderr)
 
 readMatrix :: String -> IO Matrix
 readMatrix filename = do
