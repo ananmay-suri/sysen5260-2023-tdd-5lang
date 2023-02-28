@@ -24,6 +24,8 @@
 
 <img src="images/pl-trends.svg" alt="java" style="zoom: 67%;" />
 
+Source: insights.stackoverflow.com/trends
+
 From the chart, we can see that the current popular programming languages are:
 1. Python
 2. JavaScript
@@ -43,3 +45,11 @@ From the chart, we can see that the current popular programming languages are:
  - Java is popular in back-end development due to its cross-platform capabilities, stability, robustness, and extensive developer ecosystem.
 
  - C# is popular in Windows development due to its association with Microsoft.
+
+# On Code Implementation
+
+We divide git branches based on programming languages, namely Java, JavaScript, Python, C, and Golang.
+
+We have found that although these five types of programming languages are comprehensive, covering dynamic/static typing and compiled/interpreted languages, there is no functional programming language included. Therefore, we have added a functional programming language, Haskell. 
+
+The respective questions and answers for each language can be found in the README.md file of their corresponding branch. For example, the README.md file for Java can be found in the "java" folder of the java branch, and the same applies to other branches.
