@@ -56,7 +56,11 @@ public Matrix(int nRows, int nCols){
 }
 ```
 
-## My answer to the retrospective part
+### Additional information on Java code implementation
+
+I added a test case to verify the correctness of matrix multiplication for matrices with different numbers of rows and columns, in addition to the original test function which only checked matrix multiplication for matrices with the same number of rows and columns.
+
+## My answers to the retrospective part
 
 ### Which language from the list C, Java, JavaScript, Go, Python do you think you would recommend for the following tasks? Write a sentence or two explaining why for each:
 1. Writing a low-latency hardware driver.
@@ -73,6 +77,8 @@ public Matrix(int nRows, int nCols){
 ### Rank the languages from most popular to least popular based on StackOverflow Trends. How do you explain these results?
 
 <img src="images/pl-trends.svg" alt="java" style="zoom: 67%;" />
+
+Source: insights.stackoverflow.com/trends
 
 From the chart, we can see that the current popular programming languages are:
 1. Python
