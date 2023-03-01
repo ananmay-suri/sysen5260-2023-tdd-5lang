@@ -8,6 +8,22 @@
 5. What worked well? What could be improved? What changes would you make for your next project?
  - Version control and agile evironment worked well with this project. The Kanban board helped teammates stay on track and remain updated on assignments still in progress. We could have improved by reading and researching documentation for specific languages such as Go that would have helped in hindsight. For our next project, we will utilize a more structured Kanban board.
 
+
+
+### How would you rank the languages in order from easiest to hardest for each task:
+1. Expressing an algorithm.
+ - Python, JavaScript, Java, Go, Haskell, C (from easiest to hardest)
+2. Finding and fixing errors.
+ - Python, JavaScript, Java, Go, Haskell, C
+3. Finding and using external libraries.
+ - Python, JavaScript, Java, Go, Haskell, C
+4. Reading and understanding code written in this language.
+ - Python, JavaScript, Java, Go, Haskell, C
+5. Writing tests.
+ - Python, JavaScript, Java, Go, Haskell, C
+
+
+
 ### Which language from the list C, Java, JavaScript, Go, Python do you think you would recommend for the following tasks? Write a sentence or two explaining why for each:
 1. Writing a low-latency hardware driver.
  - C: (1) low-level access to hardware; (2) efficient memory management
