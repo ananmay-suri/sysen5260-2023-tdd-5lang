@@ -1,75 +1,10 @@
-# MatMpy in C
-This project implements matrix-multiply in C.
+# C Assignment Answers
 
-# Usage
-In order to use the `matmpy` program you must:
+1. Is C a compiled language or an interpreted language? Is C statically typed or dynamically typed?
+-  C is a compiled language and the program, once compiled, is expressed in the instructions of the target machine. This machine code is undecipherable by humans. C is a statically typed language since the programmer has to declare the variable types such that they are known at compile time. 
 
-1. Start the container.
-2. Compile the matmpy program.
-3. Run it.
+2. In c/matmpy.c, line 16 we define a structure called t_matrix. This is a data type with two attributes: matsize which is of type struct t_matsize, and values which is of type double \*\*. What does the \*\* mean? Explain why we'd use this type to represent a 2-dimensional matrix of numbers.
+- We are creating an array of pointers dynamically using a double pointer (denoted by \*\*). Once we have an array pointers allocated dynamically, we can dynamically allocate memory for every row of the 2D matrix of numbers.
 
-
-## Starting the Container
-To start the container, you need to run the following from this directory on your host machine:
-
-```
-docker-compose run shell
-```
-
-This will build and start a Linux container with all software required to compile and run C programs.
-
-Once the container builds, you should be presented with a shell-prompt similar to this:
-
-```
-root@5e51423c8497:/opt/app#
-```
-
-This is the **container shell prompt** -- a bash shell running inside the container.
-
-
-## Build
-From the container shell prompt, run:
-
-```
-make matmpy
-```
-
-This will compile the `matmpy.c` program into an executable `matmpy`.
-
-
-## Run
-From the container shell prompt, run:
-
-```
-./matmpy /opt/data/mat_a.csv /opt/data/mat_b.csv
-```
-
-This will run the `matmpy` program, passing the two CSV matrix input files as arguments. 
-Once the `multiply` function is correctly implemented, this will print the resulting
-matrix to the screen in CSV format.
-
-
-# Testing
-We provide a simple end-to-end test to test your program is running correctly.  
-
-You can run this test from the container shell prompt as follows:
-
-```
-make test
-```
-
-A PASSING test will print:
-
-```
-PASS
-```
-
-
-A FAILING test will print either a runtime error indicating a problem with your build or a 
-diff error indicating a problem with your results.
-
-Until you correctly implement the `multiply` function, you should expect this test to fail.
-
-* **Note:** This is a pretty crude way to do testing.  To do more serious TDD in C we should
-    use a testing-framework like 
-    [one of these](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#C)
+3. When constructing this assignment I needed it to work on Windows, MacOS, and Linux hosts. One difference between these OSes is text-file line-ending markers: On the Mac and Linux we use \n to mark the end of the line. On Windows we use two characters: \r\n. Thisisahistorical holdover from DOS, Windows' original kernel. Docker hides most of these host-OS details from the container, but because we "mount" local folders inside the container (See lines 7 and 8 in the c/docker-compose.yaml file.) I had to deal with the possibility of either file-type. Where in matmpy.c can you find code that deals with this line-ending difference? Can you find any other places in the c/ folder that deal with this line-ending difference?
+- In matmpy.c we are using the function next_matrix_symbol to check the next seperator in the file. If it is \n or if it is \r followed by a \n then we are classifying it as the end of the row, otherwise it is a bad format. Apart from this function, we are also using dos2unix (which is a DOS/MAC to UNIX text file format converter) to convert our output in an expected csv file and then compare it to our final result csv. This command converts line breaks in the file without saving it in the original format.
