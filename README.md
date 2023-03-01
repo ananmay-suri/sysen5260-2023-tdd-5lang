@@ -6,7 +6,7 @@
 3. How were you able to use git/GitHub to facilitate collaboration?
  - We were able to use GitHub for version control via git commands. Furthermore, we utilized Jira and our commit messages to update the workflow among team members.
 5. What worked well? What could be improved? What changes would you make for your next project?
- - Version control and agile evironment worked well with this project. The Kanban board helped teammates stay on track and remain updated on assignments still in progress. We could have improved by reading and researching documentation for specific languages such as Go that would have helped in hindsight. For our next project, we will utilize a more structured Kanban board.
+ - Version control and agile evironment worked well with this project. The Kanban board helped teammates stay on track and remain updated on assignments still in progress. Adding the Issue Code from Jira Issues into our commit messages helped us track commits and pull request changes for different tasks. We could have improved by reading and researching documentation for specific languages such as Go that would have helped in hindsight. For our next project we will utilize a more structured Kanban board, use GitHub Actions for continuous integration and make more test cases using a TDD framework.
 
 ### How would you rank the languages in order from easiest to hardest for each task:
 1. Expressing an algorithm.
@@ -23,13 +23,13 @@
 ### Which language from the list C, Java, JavaScript, Go, Python do you think you would recommend for the following tasks? Write a sentence or two explaining why for each:
 1. Writing a low-latency hardware driver.
  - C: (1) low-level access to hardware; (2) efficient memory management
-1. Prototyping a new genomic search algorithm.
+2. Prototyping a new genomic search algorithm.
  - Python: (1) rich computing library: Numpy/SciPy/Scikit-learn/...
-1. Implementing a high-performance genomic search algorithm.
+3. Implementing a high-performance genomic search algorithm.
  - Go: like C/C++, (1) efficient memory management; (2) optimized concurrency features, suitable for high concurrency scenarios
-1. Building a large library for modeling complex financial instruments?
+4. Building a large library for modeling complex financial instruments?
  - Java: has a mature back-end development framework, e.g. Spring, with excellent stability/robustness and portability for building large projects
-2. Building a complicated user interface?
+5. Building a complicated user interface?
  - JavaScipt: almost irreplaceable in the field of front-end development, and has a rich library and development framework
 
 ### Rank the languages from most popular to least popular based on StackOverflow Trends. How do you explain these results?
