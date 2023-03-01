@@ -154,7 +154,17 @@ public class Matrix{
      */
     public Matrix multiply(final Matrix other){
         Matrix result = new Matrix(this.nRows, other.nCols);
-        // TODO: Implement Matrix-Multiply 
+
+        for (int i = 0; i < this.nRows; i++) {
+            for (int j = 0; j < other.nCols; j++) {
+                double sum = 0.0;
+                for (int k = 0; k < this.nCols; k++) {
+                    sum += this.values[i][k] * other.values[k][j];
+                }
+                result.values[i][j] = sum;
+            }
+        }
+
         return result;
     }
     
