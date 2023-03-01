@@ -1,0 +1,24 @@
+cabal-version:      2.4
+name:               matrix-multiply
+version:            0.1.0.0
+license:            NONE
+extra-source-files: CHANGELOG.md
+
+library matrix-lib
+  exposed-modules:     Matrix
+  hs-source-dirs:      lib
+  build-depends:       base ^>=4.14.1.0
+  default-language:    Haskell2010
+
+executable matrix-multiply
+    main-is:          Main.hs
+    build-depends:    base ^>=4.14.1.0, matrix-lib
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+test-suite test-matmtply
+    type:                exitcode-stdio-1.0
+    main-is:             Matrix-test.hs
+    hs-source-dirs:      test
+    build-depends:       base ^>=4.14.1.0, matrix-lib, HUnit >=1.6 && <1.7
+    default-language:    Haskell2010
