@@ -8,8 +8,6 @@
 5. What worked well? What could be improved? What changes would you make for your next project?
  - Version control and agile evironment worked well with this project. The Kanban board helped teammates stay on track and remain updated on assignments still in progress. We could have improved by reading and researching documentation for specific languages such as Go that would have helped in hindsight. For our next project, we will utilize a more structured Kanban board.
 
-
-
 ### How would you rank the languages in order from easiest to hardest for each task:
 1. Expressing an algorithm.
  - Python, JavaScript, Java, Go, Haskell, C (from easiest to hardest)
@@ -21,8 +19,6 @@
  - Python, JavaScript, Java, Go, Haskell, C
 5. Writing tests.
  - Python, JavaScript, Java, Go, Haskell, C
-
-
 
 ### Which language from the list C, Java, JavaScript, Go, Python do you think you would recommend for the following tasks? Write a sentence or two explaining why for each:
 1. Writing a low-latency hardware driver.
@@ -68,4 +64,4 @@ We divide git branches based on programming languages, namely Java, JavaScript, 
 
 We have found that although these five types of programming languages are comprehensive, covering dynamic/static typing and compiled/interpreted languages, there is no functional programming language included. Therefore, we have added a functional programming language, Haskell. 
 
-The respective questions and answers for each language can be found in the README.md file of their corresponding branch. For example, the README.md file for Java can be found in the "java" folder of the java branch, and the same applies to other branches.
+The answers and corresponding questions for each programming language can be accessed through their respective branches' README.md files. For instance, the README.md file for the Java branch can be located in the "java" directory of the Java branch, and the same principle applies to other branches. Additionally, the answers can also be found in the README.md files of each language's directory within the master branch.
